@@ -95,6 +95,7 @@ export class EditDoc extends React.Component {
             </ul>
           </div>
         </div>
+        <Editor editorState={this.props.doc.editsObject} onEditorStateChange={this.editingDoc} onContentStateChange={this.createHTML} toolbar={simpleToolbar}/>
         <EditDoc_details />
       </div>
     )
